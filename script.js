@@ -17,7 +17,7 @@ $(document).ready(function() {
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                         </button>
                     </div>
-                    <li class="px-6 py-2 border-b border-gray-200 w-full rounded-lg bg-blue-600 text-white"> ${text}</li>
+                    <li class="px-6 py-2 border-b border-gray-200 w-full rounded-lg bg-blue-600 text-white shadow-lg capitalize"> ${text}</li>
                 </div>
             `);
             $("#input").val("");

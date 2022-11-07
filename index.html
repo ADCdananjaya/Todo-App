@@ -7,24 +7,31 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Todo</title>
 </head>
-<body class="">
-    <h1 class="flex justify-center m-10 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
-        Todo List
-    </h1>
-
+<body class="bg-gradient-to-r from-teal-200 to-teal-400">
     <div class="flex justify-center">
-        <div class="relative w-2/5">
-            <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>    
+    <div class="card rounded-lg w-3/5 mt-10 bg-white shadow-2xl">
+        <div class="card-header mx-4 mt-4">
+            <h1 class="flex justify-center m-10 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
+                Todo List
+            </h1>
+        </div>
+        <div class="card-body">
+            <div class="flex justify-center">
+                <div class="relative w-3/5 shadow-md">
+                    <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>    
+                    </div>
+                    <input type="search" id="input" class="block p-5 pl-10 w-full text-sm text-gray-900 rounded-lg border border-gray-300 focus:ring-black-500 focus:border-black-500" placeholder="Add your Todos" required="">
+                    <button type="submit" id="add" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-black-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add</button>
+                </div>
             </div>
-            <input type="search" id="input" class="block p-5 pl-10 w-full text-sm text-gray-900 rounded-lg border border-gray-300 focus:ring-black-500 focus:border-black-500" placeholder="Add your Todos" required="">
-            <button type="submit" id="add" class="text-white absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-black-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add</button>
+
+            <div class="flex justify-center m-10">
+                <ul id="list" class="rounded-lg w-96 text-gray-900">
+                </ul>
+            </div>
         </div>
     </div>
-
-    <div class="flex justify-center m-10">
-        <ul id="list" class="rounded-lg w-96 text-gray-900">
-        </ul>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" type="text/javascript"></script>
     <script src="script.js" type="text/javascript"></script>
